@@ -1,5 +1,8 @@
+# Astro-dots - Completly minimalistic Dotfiles
+
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/990b7e0b-ba03-42a2-a532-9c169dc6ad19" />
-# Astro-dots - Completly minimalistic Dotfiles.
+# Astro-dots - Completly minimalistic Dotfiles
+
 Intallation steps:
 cd .config
 Copy your config or move
