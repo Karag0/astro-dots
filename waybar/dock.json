@@ -1,0 +1,34 @@
+{
+  "layer": "bottom",
+  "position": "bottom",
+  "height": 30,
+  "width": 600,
+  "margin-top": 0,
+  "margin-bottom": 10,
+  "margin-left": "auto",
+  "margin-right": "auto",
+  "modules-center": ["custom/launcher", "wlr/taskbar", "tray"],
+
+  "custom/launcher": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 35,
+    "icon-theme": "Papirus",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "on-click-right": "minimize",
+    "ignore-list": ["Alacritty", "kitty"],
+    "all-outputs": false
+  },
+
+  "tray": {
+    "spacing": 10,
+    "icon-size": 16
+  }
+}

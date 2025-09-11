@@ -1,0 +1,76 @@
+/* ~/.config/rofi/config.rasi */
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "JetBrains Mono 12";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    sidebar-mode: false;
+}
+
+@theme "default"
+
+window {
+    transparency: "real";
+    background-color: rgba(0, 0, 0, 0.8);
+    text-color: #ffffff;
+    border: 2px;
+    border-color: rgba(89, 89, 89, 0.67);
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+}
+
+inputbar {
+    children: ["prompt", "entry"];
+    background-color: rgba(0, 0, 0, 0);
+    text-color: #ffffff;
+    padding: 10px;
+}
+
+prompt {
+    background-color: rgba(0, 0, 0, 0);
+    text-color: rgba(0, 255, 153, 0.93); /* Лаймовый цвет */
+    padding: 0px 10px 0px 0px;
+}
+
+entry {
+    background-color: rgba(0, 0, 0, 0);
+    text-color: #ffffff;
+    placeholder-color: #595959;
+}
+
+listview {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    columns: 1;
+    lines: 8;
+    scrollbar: false;
+}
+
+element {
+    background-color: rgba(0, 0, 0, 0);
+    text-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: rgba(0, 255, 153, 0.2); /* Лаймовый с прозрачностью */
+    text-color: #00ff99; /* Яркий лаймовый */
+    border: 1px;
+    border-color: rgba(0, 255, 153, 0.5); /* Лаймовый бордер */
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-icon {
+    size: 32px;
+    background-color: transparent;
+}

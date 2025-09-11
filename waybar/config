@@ -1,0 +1,87 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 5,
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "active-only": false,
+        "format-icons": {
+            "default": "",
+            "active": "",
+            "urgent": ""
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50,
+        "separator": false
+    },
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "format-alt": " {:%d/%m/%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    "network": {
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": " Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 5
+    },
+
+    "memory": {
+        "format": "💾{}%",
+        "interval": 5
+    },
+
+    "temperature": {
+        "format": " {temperatureC}°C",
+        "critical-threshold": 80,
+        "interval": 5
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 5
+    },
+
+    "tray": {
+        "spacing": 10
+    }
+}
