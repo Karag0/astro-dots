@@ -1,0 +1,41 @@
+[general]
+framerate = 60
+bars = 0
+bar_width = 1
+bar_spacing = 0
+lower_cutoff_freq = 40
+higher_cutoff_freq = 18000
+autosens = 1
+sensitivity = 90
+
+[input]
+method = pipewire
+source = auto
+
+[output]
+method = noncurses
+orientation = bottom
+channels = stereo
+xaxis = none
+synchronized_sync = 1
+
+[smoothing]
+noise_reduction = 90
+
+[eq]
+1 = 1.4  # Басы
+2 = 1.2
+3 = 1.0  # Средние частоты
+4 = 1.0
+5 = 1.6  # Высокие частоты
+
+[color]
+gradient = 1
+gradient_color_1 = '#ff0000'  # Красный (низкие частоты)
+gradient_color_2 = '#ff7f00'  # Оранжевый
+gradient_color_3 = '#ffff00'  # Желтый
+gradient_color_4 = '#00ff00'  # Зеленый
+gradient_color_5 = '#0000ff'  # Синий
+gradient_color_6 = '#4b0082'  # Индиго
+gradient_color_7 = '#9400d3'  # Фиолетовый
+gradient_color_8 = '#ff00ff'  # Пурпурный (высокие частоты)

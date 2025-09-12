@@ -1,0 +1,111 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "builtin",
+    "source": "arch",
+  },
+  "display": {
+    "color": {
+      "keys": "light_blue",
+      "title": "light_blue",
+      "output": "light_green",
+      "separator": "light_white",
+    },
+    "percent": {
+      "type": ["num", "bar", "num-color"],
+      "ndigits": 1,
+      "color": {
+        "green": 30,
+        "yellow": 70,
+      },
+    },
+    "bar": {
+      "width": 15,
+      "char": {
+        "elapsed": "■",
+        "total": "─",
+      },
+      "border": {
+        "left": "[",
+        "right": "]",
+      },
+    },
+  },
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "light_blue",
+        "at": "white",
+        "host": "light_blue",
+      },
+    },
+    "separator",
+    {
+      "type": "os",
+      "key": "OS",
+      "format": "Arch Linux {version} ({arch})",
+      "outputColor": "light_blue",
+    },
+    "host",
+    "kernel",
+    "uptime",
+    {
+      "type": "packages",
+      "key": "Packages",
+      "outputColor": "cyan",
+      "format": "{pacman} (pacman)",
+    },
+    "shell",
+    {
+      "type": "display",
+      "compactType": "scaled-with-refresh-rate",
+    },
+    "de",
+    "wm",
+    "wmtheme",
+    "terminal",
+    "terminalfont",
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "outputColor": "light_yellow",
+      "temp": {
+        "green": 50,
+        "yellow": 70,
+      },
+    },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "outputColor": "light_magenta",
+    },
+    {
+      "type": "memory",
+      "key": "Memory",
+      "percent": {
+        "type": ["num", "bar", "num-color"],
+      },
+    },
+    {
+      "type": "disk",
+      "key": "Disk",
+      "percent": {
+        "type": ["num", "bar", "num-color"],
+      },
+    },
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    {
+      "type": "colors",
+      "symbol": "block",
+      "block": {
+        "width": 3,
+        "range": [1, 8],
+      },
+    },
+  ],
+}
