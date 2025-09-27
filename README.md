@@ -5,9 +5,9 @@
 Intallation steps:
 cd .config
 Copy your config or move
-mv -r hypr hyprbackup
-mv -r waybar waybarbackup
-mv -r rofi rofibackup
+mv hypr hyprbackup
+mv waybar waybarbackup
+mv rofi rofibackup
 Than run git clone https://github.com/Karag0/astro-dots.git, reload.
 
 ## Keybinds
