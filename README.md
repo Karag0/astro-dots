@@ -1,4 +1,4 @@
-# Astro-dots - Completly minimalistic Dotfiles
+# Astro-dots - Completly minimalistic Dotfiles [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Karag0/astro-dots)
 
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/990b7e0b-ba03-42a2-a532-9c169dc6ad19" />
 
