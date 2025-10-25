@@ -45,7 +45,14 @@ Than run git clone https://github.com/Karag0/astro-dots.git, reload.
     SUPER + B: Open Firefox
 
     
-###### Screenshots 
+### Screenshots 
 
     SUPER + S: Capture full screen
     SUPER + SHIFT + S: Capture active window
+
+
+### Float windows
+
+    SUPER + C: Move float window to centre
+    SUPER + shift + M: Move window to centre and resize
+    SUPER + +/-: Make window bigger or smaller
