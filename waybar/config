@@ -1,11 +1,12 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
-    "spacing": 5,
+    "height": 36,
+    "spacing": 8,
+    "margin": "10px 15px 0px 15px",
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray"],
+    "modules-right": ["pulseaudio", "network", "hyprland/language", "cpu", "memory", "temperature", "battery", "tray"],
 
     "hyprland/workspaces": {
         "format": "{name}",
@@ -51,13 +52,21 @@
         "on-click": "nm-connection-editor"
     },
 
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "🇺🇸 EN",
+        "format-ru": "🇷🇺 RU",
+        "on-click": "hyprctl keyword input:kb_layout $(hyprctl devices | grep -A 10 'keyboard' | grep 'active keymap:' | awk '{print $3}' | head -1 | grep -q 'Russian' && echo 'us' || echo 'ru')",
+        "on-click-right": "swaymsg input type:keyboard xkb_switch_layout next"
+    },
+
     "cpu": {
         "format": " {usage}%",
         "interval": 5
     },
 
     "memory": {
-        "format": "💾{}%",
+        "format": "💾 {}%",
         "interval": 5
     },
 
